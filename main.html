@@ -15,51 +15,96 @@
   <!-- favicon -->
   <link rel="shortcut icon" type="image/b_cal_image.jpeg" href="/favicon.ico"/>
 
-  <title>bavc Calendar</title>
+  <title>BAVC Calendar</title>
 </head>
 <body>
-  <div align="center" class="logo">
-    <img src="images/b_cal_image.jpeg" alt="bavc_logo" height="100" width="100">
+  <div class="container">
+    <div class="name-date-form">
+      <h1>bavc Calendar</h1>
+        <form action="">
+            <div class="form-group">
+              <label for="fullName">Name</label>
+              <input name="fullName" id="fullName"type="text">
+            </div>
+            <div class="form-group">
+              <label for="slotADays">Slot A</label>
+              <select name="slotADays" id="slotADays">
+                <option value="0">Monday</option>
+                <option value="1">Tuesday</option>
+                <option value="2">Wednesday</option>
+                <option value="3">Thursday</option>  
+                <option value="4">Friday</option>              
+              </select>
+              <select name="slotATimes" id="slotATimes">
+                <option value="0">Morning</option>
+                <option value="1">Afternoon</option>
+                <option value="2">Evening</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="slotBDays">Slot B</label>
+              <select name="slotBDays" id="slotBDays">
+                <option value="0">Monday</option>
+                <option value="1">Tuesday</option>
+                <option value="2">Wednesday</option>
+                <option value="3">Thursday</option>  
+                <option value="4">Friday</option>              
+              </select>
+              <select name="slotBTimes" id="slotBTimes">
+                <option value="0">Morning</option>
+                <option value="1">Afternoon</option>
+                <option value="2">Evening</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="slotCDays">Slot C</label>
+              <select name="slotCDays" id="slotCDays">
+                <option value="0">Monday</option>
+                <option value="1">Tuesday</option>
+                <option value="2">Wednesday</option>
+                <option value="3">Thursday</option>  
+                <option value="4">Friday</option>              
+              </select>
+              <select name="slotCTimes" id="slotCTimes">
+                <option value="0">Morning</option>
+                <option value="1">Afternoon</option>
+                <option value="2">Evening</option>
+              </select>
+            </div>            
+        </form>
+    </div>
+    <div class="calendar-days">
+      <table class="table table-bordered">
+        <tr>
+          <td>M</td>
+          <td>T</td>
+          <td>W</td>
+          <td>TH</td>
+          <td>F</td>
+        </tr>
+      </table>
+    </div>
+    <h1>Times Available</h1>
+    <div class="times-available">
+      <table class="table table-bordered">
+        <tr>
+          <td>Name</td>
+          <td>Day</td>
+          <td>Times</td>
+        </tr>
+        <tr>
+          <td>Name</td>
+          <td>Day</td>
+          <td>Times</td>
+        </tr>
+         <tr>
+          <td>Name</td>
+          <td>Day</td>
+          <td>Times</td>
+        </tr>       
+      </table>
+    </div>
   </div>
-
-  <h1 align="center" class="title">bavc Calendar makes Scheduling Easy</h1>
-  
-  <form id="bavc_form">
-  <fieldset class="form-group">
-    <label for="exampleInputEmail1">Full Name</label>
-    <input type="full_name" class="form-control">
-  </fieldset>
-  <fieldset class="form-group">
-    <label for="exampleSelect1">Select Days</label>
-    <select class="form-control" id="exampleSelect1">
-      <option>Monday</option>
-      <option>Tuesday</option>
-      <option>Wednesday</option>
-      <option>Thursday</option>
-      <option>Friday</option>
-    </select>
-  </fieldset>
-<button type="submit" class="btn btn-primary">Set Availability</button><br>
-</form>
-<br>
-<table style="width:100%">
-  <tr>
-    <th>Monday</th>
-    <th>Tuesday</th>
-    <th>Wednesday</th>
-    <th>Thursday</th>
-    <th>Friday</th>
-  </tr>
-
-  <tr>
-    <td>My Availibility</td>
-    <td>My Availibility</td>
-    <td>My Availibility</td>
-    <td>My Availibility</td>
-    <td>My Availibility</td>
-  </tr>
-</table>
-
 
 
 
