@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- set viewport to device width to make site responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- bootstrap css -->
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- custom styles -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" type="image/b_cal_image.jpeg" href="/favicon.ico"/>
+
+  <title>bavc Calendar</title>
+</head>
+<body>
+  <div align="center" class="logo">
+    <img src="images/b_cal_image.jpeg" alt="bavc_logo" height="100" width="100">
+  </div>
+
+  <h1 align="center" class="title">bavc Calendar makes Scheduling Easy</h1>
+  
+  <form id="bavc_form">
+  <fieldset class="form-group">
+    <label for="exampleInputEmail1">Full Name</label>
+    <input type="full_name" class="form-control">
+  </fieldset>
+  <fieldset class="form-group">
+    <label for="exampleSelect1">Select Days</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>Monday</option>
+      <option>Tuesday</option>
+      <option>Wednesday</option>
+      <option>Thursday</option>
+      <option>Friday</option>
+    </select>
+  </fieldset>
+<button type="submit" class="btn btn-primary">Set Availability</button><br>
+</form>
+<br>
+<table style="width:100%">
+  <tr>
+    <th>Monday</th>
+    <th>Tuesday</th>
+    <th>Wednesday</th>
+    <th>Thursday</th>
+    <th>Friday</th>
+  </tr>
+
+  <tr>
+    <td>My Availibility</td>
+    <td>My Availibility</td>
+    <td>My Availibility</td>
+    <td>My Availibility</td>
+    <td>My Availibility</td>
+  </tr>
+</table>
+
+
+
+
+
+  <!-- jquery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+  <!-- bootstrap js -->
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <!-- handlebars -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.3/handlebars.min.js"></script>
+
+  <!-- custom script -->
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
